@@ -43,18 +43,18 @@ void loop() {
             digitalWrite(Motor11, LOW);
             digitalWrite(Motor12, HIGH);
             digitalWrite(Motor21, LOW);
-            digitalWrite(Motor22, HIGH);
+            digitalWrite(Motor22, LOW);
             analogWrite(PWMmotor1, 250);
-            analogWrite(PWMmotor2, 10);
+            analogWrite(PWMmotor2, 0);
     }
 
     else if(RIGHT_SENSOR==LOW && LEFT_SENSOR==HIGH) //RIGHT
     {
               digitalWrite(Motor11, LOW);
-              digitalWrite(Motor12, HIGH);
+              digitalWrite(Motor12, LOW);
               digitalWrite(Motor21, LOW);
               digitalWrite(Motor22, HIGH);
-              analogWrite(PWMmotor1, 10);
+              analogWrite(PWMmotor1, 0);
               analogWrite(PWMmotor2, 250);
     }
 
